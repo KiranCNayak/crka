@@ -1,7 +1,8 @@
 #! /usr/bin/env node
 /* eslint-disable no-console */
 
-import cp, { spawn } from 'child_process'
+const { spawn } = require('child_process')
+const cp = require('child_process')
 
 const name = process.argv[2]
 
