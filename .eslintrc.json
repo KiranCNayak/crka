@@ -1,0 +1,19 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "camelcase": 0,
+    "comma-dangle": 0,
+    "import/extensions": 0,
+    "no-param-reassign": 0,
+    "no-return-assign": 0,
+    "no-underscore-dangle": 0,
+    "quotes": [
+      "error", "single"
+    ],
+    "semi": ["error", "never"]
+  },
+  "root": true
+}
