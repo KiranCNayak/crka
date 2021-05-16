@@ -48,10 +48,9 @@ if (!errorInFileName) {
     .then(() => {
       console.log('Done! Initialised the directory as a GIT Repo!')
       console.log('')
-      console.log('Next Steps:')
+      runCommand('cd', [name])
+      console.log('Next Step - Run the app')
       console.log('')
-      console.log('1. cd', name)
-      console.log('')
-      console.log('2. npm run dev')
+      console.log('npm run dev')
     })
 }
