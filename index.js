@@ -53,7 +53,7 @@ if (!errorInFileName) {
       console.log('')
       console.log('npm run dev')
       cp.exec('cd', [name], {
-        cwd: `${process.cwd()}/${name}`,
+        cwd: `${process.cwd()}`,
       })
     })
     .then(() => {
