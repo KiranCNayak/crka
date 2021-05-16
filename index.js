@@ -52,9 +52,7 @@ if (!errorInFileName) {
       console.log('Next Step - Run the app')
       console.log('')
       console.log('npm run dev')
-      cp.exec('cd', [name], {
-        cwd: `${process.cwd()}`,
-      })
+      return cp.exec(`cd ${name}`)
     })
     .then(() => {
       console.log('🎊🎊🎊🎊🎊🎊🎊')
