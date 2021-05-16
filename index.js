@@ -51,6 +51,8 @@ if (!errorInFileName) {
       console.log('Next Step - Run the app')
       console.log('')
       console.log('npm run dev')
-      return runCommand('cd', [name])
+      return runCommand('cd', [`${name}`], {
+        cwd: `${process.cwd()}/${name}`,
+      })
     })
 }
