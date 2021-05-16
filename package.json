@@ -1,6 +1,6 @@
 {
   "name": "crka",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "bin": {
     "create-express-api": "index.js"
   },
