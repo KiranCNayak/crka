@@ -2,7 +2,6 @@
 /* eslint-disable no-console */
 
 const { spawn } = require('child_process')
-const cp = require('child_process')
 
 const name = process.argv[2]
 
@@ -49,12 +48,10 @@ if (!errorInFileName) {
     .then(() => {
       console.log('Done! Initialised the directory as a GIT Repo!')
       console.log('')
-      console.log('Next Step - Run the app')
+      console.log('Next Steps:')
       console.log('')
-      console.log('npm run dev')
-      return cp.exec(`cd ${name}`)
-    })
-    .then(() => {
-      console.log('🎊🎊🎊🎊🎊🎊🎊')
+      console.log('1. cd', name)
+      console.log('')
+      console.log('2. npm run dev')
     })
 }
