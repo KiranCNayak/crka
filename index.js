@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 /* eslint-disable no-console */
 
-const { spawn } = require('child_process')
+import cp, { spawn } from 'child_process'
 
 const name = process.argv[2]
 
@@ -51,8 +51,11 @@ if (!errorInFileName) {
       console.log('Next Step - Run the app')
       console.log('')
       console.log('npm run dev')
-      return runCommand('cd', [`${process.cwd()}/${name}`], {
+      cp.exec('cd', [name], {
         cwd: `${process.cwd()}/${name}`,
       })
+    })
+    .then(() => {
+      console.log('🎊🎊🎊🎊🎊🎊🎊')
     })
 }
