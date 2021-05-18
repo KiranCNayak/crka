@@ -42,7 +42,7 @@ if (!errorInFileName) {
     .then(() => {
       console.log('Installing dependencies...')
       return runCommand('npm', ['install'], {
-        cwd: `${process.cwd()}/${name}`,
+        cwd: `${process.cwd()}/${name}`
       })
     })
     .then(() => {
